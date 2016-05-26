@@ -1,0 +1,20 @@
+html, body, .center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.InnerRounding {
+    text-align: center;
+
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+    box-shadow: 0 0 0 .57em #655; /* sadly in SAFARI .5em will leak, try yourself */
+    outline: .6em solid #655;
+}
