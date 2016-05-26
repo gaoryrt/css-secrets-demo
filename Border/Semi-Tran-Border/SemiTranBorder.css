@@ -7,7 +7,7 @@ html, body, .center {
 .center {
     justify-content: center;
     align-items: center;
-    background: url('http://csssecrets.io/images/stone-art.jpg');
+    background: url('./stone-art.jpg');
 }
 
 .semi-tran {

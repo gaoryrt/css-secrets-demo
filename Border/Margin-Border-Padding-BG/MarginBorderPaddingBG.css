@@ -1,0 +1,22 @@
+html, body, .center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    background: url('./stone-art.jpg');
+}
+
+.div {
+    border: 2em solid black;
+    background: white;            /*order 1*/
+    background-clip: content-box; /*order 2   comments this line to see the diff*/
+
+    max-width: 20em;
+    padding: 2em;
+    margin: 2em auto 0;           /* up left&right down */
+    font: 100%/1.5 sans-serif;
+}

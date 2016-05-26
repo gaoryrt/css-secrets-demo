@@ -1,0 +1,38 @@
+html, body, .center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-shadow, .outline, .outline-offset {
+    max-width: 20em;
+    padding: 3em 4em;
+    margin: 2em auto;
+    font: 100%/1.5 sans-serif;
+}
+
+.box-shadow {
+    background: yellowgreen;
+    box-shadow: 0    0    0    10px #66F,
+                10px 0    0    20px deeppink,
+                0    10px 0    30px #F66,
+                0    0    10px 40px #6F6;           /* use comma to seperate */
+}
+
+.outline, .outline-offset {
+    background: yellowgreen;
+    border: 10px solid #66F;
+    outline: 10px solid deeppink;
+    border-radius: 40px;    /* sadly outline cannot get a radius border */
+}
+
+.outline-offset {
+    outline-offset: -20px;
+    outline-style: dotted;
+}
