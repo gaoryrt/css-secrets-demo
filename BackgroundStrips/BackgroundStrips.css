@@ -10,7 +10,7 @@ html, body, .center {
     justify-content: center;
 }
 
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten{
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven{
     display: flex;
     align-self: stretch;
     flex-grow: 1;
@@ -80,4 +80,13 @@ html, body, .center {
         rgba(200, 0, 0, .5) 50%,
         transparent 0);
     background-size: 30px 30px;
+}
+
+.eleven {
+    background: hsl(20, 40%, 90%);
+    background-image: linear-gradient(#fb3 11px, transparent 0),
+        linear-gradient(#58a 23px, transparent 0),
+        linear-gradient(#ab4 41px, transparent 0),
+        linear-gradient(#655 31px, transparent 0);
+    background-size: 100% 41px, 100% 51px, 100% 73px, 100% 22px;
 }
