@@ -15,6 +15,7 @@ html, body, .center {
     display: flex;
     align-self: stretch;
     flex-grow: 1;
+    border: white solid 10px;
 }
 
 .one {
