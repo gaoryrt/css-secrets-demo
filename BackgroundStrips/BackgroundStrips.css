@@ -9,7 +9,6 @@ html, body, .center {
     flex-direction: row;
     justify-content: center;
     font: 150%/1.6 serif;
-    text-align: center;
 }
 
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven{
