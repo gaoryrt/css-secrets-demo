@@ -1,0 +1,42 @@
+html, body, .center{
+    height: 98%;
+    width: 98%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonone, .buttontwo {
+    font: 30px/1.2 serif;
+    padding: 1em;
+    margin: 1em;
+}
+
+.buttonone {
+    background: #088;
+    color: #FFF;
+    transform: skewX(-45deg);
+}
+
+.buttonone > div {
+    transform: skewX(45deg);
+}
+
+.buttontwo {
+    position: relative;
+    color: #ddd;
+}
+
+.buttontwo::before {
+    background: #808;
+
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    content: "";
+    z-index: -1;
+    transform: skewX(45deg);
+}
+
