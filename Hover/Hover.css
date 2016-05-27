@@ -1,0 +1,35 @@
+html, body, .center {
+    height: 98%;
+    width: 100%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.ilovehover {
+    height: 100px;
+    width: 100px;
+    background-color: #FFDE37;
+    font: 150%/1.2 serif;
+    border-radius: 50px;
+    border: 0;
+
+    transform: translate(0, 0);
+    box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.5);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.ilovehover:focus {
+    outline: 0;
+    transform: translate(-2px, -5px);
+    box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    transform: translate(-2px, -5px);
+    box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.5);
+    transition: transform .5s, box-shadow .5s;
+}
