@@ -9,15 +9,15 @@ html, body, .center{
     align-items: center;
 }
 
-.buttonone, .buttontwo {
+.buttonone, .buttontwo, .buttonthree {
     font: 30px/1.2 serif;
     padding: 1em;
     margin: 1em;
+    color: #FFF;
 }
 
 .buttonone {
     background: #088;
-    color: #FFF;
     transform: skewX(-45deg);
 }
 
@@ -27,7 +27,6 @@ html, body, .center{
 
 .buttontwo {
     position: relative;
-    color: #ddd;
 }
 
 .buttontwo::before {
@@ -40,3 +39,12 @@ html, body, .center{
     transform: skewX(45deg);
 }
 
+.buttonthree {
+    padding-right: 1.5em;
+    background: #080;
+    background:
+        linear-gradient(-135deg, transparent 35px, #880 0) top right,
+        linear-gradient(-45deg, transparent 35px, #880 0) bottom right;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
