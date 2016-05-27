@@ -1,0 +1,30 @@
+html, body, .center {
+  height: 98%;
+  width: 100%;
+  display: flex; }
+
+.center {
+  justify-content: center;
+  align-items: center; }
+
+.imageborder, .envelopeborder, .ants {
+  width: 250px;
+  margin: 1em;
+  padding: 1em;
+  border: 1em solid transparent; }
+
+.imageborder {
+  background: linear-gradient(white, white) padding-box, url("stone-art.jpg") border-box 0/cover; }
+
+.envelopeborder {
+  background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0/8em 8em; }
+
+@keyframes ants {
+  to {
+    background-position: 100%; } }
+.ants {
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0/0.6em 0.6em;
+  animation: ants 12s linear infinite; }
+
+/*# sourceMappingURL=ImageBorder.css.map */
