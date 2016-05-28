@@ -9,9 +9,12 @@ html, body, .center {
     align-items: center;
 }
 
-.one {
+.one, .two, .three, .four {
     margin: 1em;
     padding: 2em;
+}
+
+.one {
     background: #88F;
     background: linear-gradient(-135deg, transparent 1em, #88F 0)
 }
@@ -23,10 +26,27 @@ html, body, .center {
 }
 
 .three {
-    margin: 1em;
-    padding: 2em;
     background:
         linear-gradient(to left bottom,
             transparent 50%, rgba(123, 0, 128, 1) 0) no-repeat 100% 0 / 3em 1.73em,
         linear-gradient(-150deg, transparent 1.5em, #D8D 0)
+}
+
+.four {
+    position: relative;
+    background: #58a;
+    background: linear-gradient(-150deg,
+        transparent 1.5em, #58a 0);
+}
+.four::before {
+    position: absolute;
+    content: '';
+    top: 0; right: 0;
+    background: linear-gradient(to left bottom,
+        transparent 50%, rgba(0, 0, 0, .5) 0)
+        100% 0 no-repeat;
+    height: 3em;
+    width: 1.73em;
+    transform: translateY(-1.3em) rotate(-30deg); /* the order */
+    transform-origin: bottom right;
 }
