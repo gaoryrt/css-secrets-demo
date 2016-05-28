@@ -1,0 +1,32 @@
+html, body, .center {
+    height: 98%;
+    width: 98%;
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    margin: 1em;
+    padding: 2em;
+    background: #88F;
+    background: linear-gradient(-135deg, transparent 1em, #88F 0)
+}
+
+.two {
+    background:
+        linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 255, .5) 0) no-repeat 100% 0 / 2em 2em,
+        linear-gradient(-135deg, transparent 1.41em, #88F 0);
+}
+
+.three {
+    margin: 1em;
+    padding: 2em;
+    background:
+        linear-gradient(to left bottom,
+            transparent 50%, rgba(123, 0, 128, 1) 0) no-repeat 100% 0 / 3em 1.73em,
+        linear-gradient(-150deg, transparent 1.5em, #D8D 0)
+}
